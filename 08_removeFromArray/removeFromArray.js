@@ -1,11 +1,15 @@
-const removeFromArray = function(array, element) {
+const removeFromArray = function(array, ...params) {
 
-    array.splice(array.indexOf(element),1);
+    for (let i = 0; i < array.length; i++) {
+
+        array.splice(array.indexOf(params[i]),1);
+
+    }
 
     return array;
 };
 
-//console.log(removeFromArray(["A","B","C"], "B"));
+console.log(removeFromArray(["A","B","C"], "B"));
 
 // Do not edit below this line
 module.exports = removeFromArray;
