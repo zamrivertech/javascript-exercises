@@ -7,7 +7,7 @@ describe('removeFromArray', () => {
   test.skip('removes multiple values', () => {
     expect(removeFromArray([1, 2, 3, 4], 3, 2)).toEqual([1, 4]);
   });
-  test,skip('removes multiple of the same value', () => {
+  test.skip('removes multiple of the same value', () => {
     expect(removeFromArray([1, 2, 2, 3], 2)).toEqual([1, 3]);
   });
   test.skip('ignores non present values', () => {
