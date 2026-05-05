@@ -1,5 +1,7 @@
 const removeFromArray = function(array, ...params) { //get array and params
 
+    //implement splice again
+
     
 };
 
