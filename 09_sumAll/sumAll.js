@@ -1,5 +1,11 @@
 const sumAll = function(a,b) {
 
+    //prevent negative numbers
+
+    if (a < 0 || b < 0) {
+        return 'ERROR';
+    }
+
     //control larger number
 
     let temp = 0;//create empty variable to help switching process
