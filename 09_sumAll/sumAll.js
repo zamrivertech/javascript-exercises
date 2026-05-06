@@ -1,5 +1,19 @@
 const sumAll = function(a,b) {
 
+    //control larger number
+
+    let temp = 0;//create empty variable to help switching process
+
+    if (a > b) { //if a is larger than b
+
+        temp = b; //store b in empty temp
+        b = a; // replace b with a
+        a = temp; // and set a equal to previous assigned temp
+
+    }
+
+    //console.log(a + " " + b); test switch if worked
+
     let counter = a; //create counter to a
 
     let sumArray = []; //create empty sum array
@@ -25,7 +39,7 @@ const sumAll = function(a,b) {
 
 };
 
-console.log(sumAll(2,4));
+//console.log(sumAll(123,1));
 
 // Do not edit below this line
 module.exports = sumAll;
